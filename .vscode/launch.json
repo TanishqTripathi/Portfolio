@@ -1,0 +1,14 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-TanishqTripathiApplication<Portfolio-website>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.portfolio.Portfolio.website.TanishqTripathiApplication",
+            "projectName": "Portfolio-website",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}
