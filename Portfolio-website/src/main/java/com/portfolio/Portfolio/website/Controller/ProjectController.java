@@ -48,7 +48,14 @@ public class ProjectController {
     }
 
     @PostMapping
-    public ResponseEntity<Project> saveProject(@Valid @RequestBody Project project) {
+    public ResponseEntity<?> saveProject(
+            @Valid @RequestBody Project project,
+            @RequestHeader("X-API-KEY") String requestApiKey) {
+
+        if (!apiKey.equals(requestApiKey)) {
+            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid API Key");
+        }
+
         Project savedProject = projectService.saveProject(project);
         return new ResponseEntity<>(savedProject, HttpStatus.CREATED);
     }

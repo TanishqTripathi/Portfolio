@@ -1,14 +1,20 @@
 {
-    "configurations": [
-        {
-            "type": "java",
-            "name": "Spring Boot-TanishqTripathiApplication<Portfolio-website>",
-            "request": "launch",
-            "cwd": "${workspaceFolder}",
-            "mainClass": "com.portfolio.Portfolio.website.TanishqTripathiApplication",
-            "projectName": "Portfolio-website",
-            "args": "",
-            "envFile": "${workspaceFolder}/.env"
-        }
-    ]
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot - TanishqTripathiApplication",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.portfolio.Portfolio.website.TanishqTripathiApplication",
+      "projectName": "Portfolio-website",
+      "env": {
+        "DATASOURCE_URL": "jdbc:mysql://localhost:3306/portfolio",
+        "DATASOURCE_USERNAME": "root",
+        "DATASOURCE_PASSWORD": "T@nishq6279",
+        "APP_API_KEY": "T@nishq2124"
+      },
+      "args": []
+    }
+  ]
 }
